@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import AuditApp from "../../AuditApp";
 import { reportUrl } from "../../../lib/siteUrl";
 
+// Required by @cloudflare/next-on-pages: every dynamic route must run on the
+// edge runtime. This page is a thin shell (client component + metadata), so
+// edge rendering is safe.
+export const runtime = "edge";
+
 // Shareable report page: /report/{domain}. Opens with a fresh auto-started
 // audit for the domain — there are no stored snapshots, so the URL only
 // carries the domain (see reportUrl() in lib/siteUrl.ts).
