@@ -1,0 +1,20 @@
+{
+  "name": "geo-auditor",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter extension dev",
+    "build": "pnpm --filter extension build",
+    "typecheck": "pnpm --filter extension typecheck",
+    "test": "pnpm --filter extension test",
+    "web:dev": "pnpm --filter web dev",
+    "web:build": "pnpm --filter web build",
+    "web:typecheck": "pnpm --filter web typecheck",
+    "web:build:cf": "pnpm --filter web build:cf"
+  }
+}
