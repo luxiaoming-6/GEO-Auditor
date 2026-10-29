@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEO Auditor</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>GEO Auditor</h1>
+      <p class="domain">当前站点：<span id="domain">读取中…</span></p>
+      <div id="history"></div>
+      <button id="start" type="button">开始检测</button>
+      <button id="export" type="button" class="export-btn" hidden>导出报告</button>
+      <p class="status" id="status"></p>
+      <div id="report"></div>
+    </main>
+    <script type="module" src="./popup.ts"></script>
+  </body>
+</html>
