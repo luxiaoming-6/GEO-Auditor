@@ -1,0 +1,13 @@
+# Cloudflare Pages config for the @cloudflare/next-on-pages output.
+name = "geo-auditor-web"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+# Local preview only (wrangler pages dev). NEXT_PUBLIC_ vars are inlined at
+# build time, so production builds pick the values from the Pages project's
+# build environment variables instead.
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://geo-auditor.pages.dev"
+NEXT_PUBLIC_BAIDU_TONGJI_ID = "6591dabdf05311aa6ef204b6d7d21936"
+NEXT_PUBLIC_ANALYTICS_ENABLED = "1"
