@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 
 // Paid-intent collection. Replace the placeholders below with real values.
-const QQ_NUMBER = "123456789";
+const QQ_NUMBER = "1393560815";
 // TODO: replace with the real group invite link before release.
 const GROUP_URL = "#";
 
