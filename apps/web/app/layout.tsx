@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { SITE_URL } from "../lib/siteUrl";
+import SiteHeader from "../components/SiteHeader";
 import "./globals.css";
 
 // Baidu Tongji injection — only when analytics is enabled for this build
@@ -22,8 +23,8 @@ const ANALYTICS_ENABLED = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "1";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "GEO Auditor - 免费 AI 引用检测工具",
-    template: "%s | GEO Auditor",
+    default: "BotGaze - 免费 AI 引用检测工具",
+    template: "%s | BotGaze",
   },
   description:
     "免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的可见性与引用情况，生成 GEO 优化建议报告。",
@@ -31,16 +32,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "zh_CN",
-    siteName: "GEO Auditor",
+    siteName: "BotGaze",
     url: "/",
-    title: "GEO Auditor - 免费 AI 引用检测工具",
+    title: "BotGaze - 免费 AI 引用检测工具",
     description:
       "免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的可见性与引用情况，生成 GEO 优化建议报告。",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GEO Auditor - 免费 AI 引用检测工具",
+    title: "BotGaze - 免费 AI 引用检测工具",
     description:
       "免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的可见性与引用情况，生成 GEO 优化建议报告。",
     images: ["/og-image.jpg"],
@@ -53,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body>
+        <SiteHeader />
         {children}
         {ANALYTICS_ENABLED && BAIDU_ID && (
           <Script

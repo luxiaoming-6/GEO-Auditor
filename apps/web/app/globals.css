@@ -312,3 +312,104 @@ footer {
     flex-direction: row;
   }
 }
+
+/* Site header (shared navigation) */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+}
+
+.site-header-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .brand {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 18px;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.site-header nav a:hover {
+  color: var(--text);
+}
+
+/* Reports list page */
+.report-list {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.report-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 18px;
+}
+
+.report-item .report-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.report-item .report-link:hover {
+  color: var(--accent);
+}
+
+.grade-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.grade-badge.a { background: var(--pass-bg); color: var(--pass); }
+.grade-badge.b { background: rgba(79, 140, 255, 0.12); color: var(--accent); }
+.grade-badge.c { background: var(--warn-bg); color: var(--warn); }
+.grade-badge.d { background: var(--fail-bg); color: var(--fail); }
+
+/* Report article page */
+.article .signals {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.article footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.article footer a:hover {
+  text-decoration: underline;
+}

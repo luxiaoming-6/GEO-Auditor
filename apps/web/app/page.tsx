@@ -6,7 +6,7 @@ import { SITE_URL } from "../lib/siteUrl";
 const webAppJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "GEO Auditor",
+  name: "BotGaze",
   url: `${SITE_URL}/`,
   applicationCategory: "DeveloperApplication",
   operatingSystem: "Web",

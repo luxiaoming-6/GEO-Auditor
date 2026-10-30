@@ -1,0 +1,216 @@
+{
+  "url": "https://www.beijing.gov.cn/",
+  "origin": "https://www.beijing.gov.cn",
+  "auditedAt": 1793341362868,
+  "robots": {
+    "status": "pass",
+    "exists": true,
+    "evaluatedPath": "/",
+    "bots": [
+      {
+        "token": "GPTBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "ChatGPT-User",
+        "category": "user",
+        "verdict": "allow"
+      },
+      {
+        "token": "ClaudeBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "PerplexityBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "Bytespider",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "CCBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Applebot-Extended",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Google-Extended",
+        "category": "other",
+        "verdict": "info",
+        "note": "该token由Google前台控制，无独立爬虫，需检查Googlebot是否被允许（当前 robots.txt 对 Googlebot 的判定：允许）"
+      }
+    ],
+    "httpStatus": 200,
+    "sizeBytes": 592
+  },
+  "llmsTxt": {
+    "status": "pass",
+    "exists": true,
+    "httpStatus": 200,
+    "summary": "# 首都之窗\r\n> 北京市人民政府门户网站——首都之窗（www.beijing.gov.cn）是北京市政府的网上服务窗口，第一时间权威发布北京市政府重大决策部署和重要政策文件，提供政务服务，畅通公众与政府互动交流。\r\n\r\n## 要闻动态\r\n- [党中央精神](https://www.beijing.gov.cn/ywdt/dzyjs/): 党中央精神。\r\n- [国务院信息](https://www.gov.cn/pushinfo/v150203/): 国务院信息。\r\n- [中央部委动态](https://www.beijing.gov.cn/ywdt/zybwdt/): 主要发布中央部委规划、计划、政策文件及重要动态信息。\r\n- [北京要闻](https://www.beijing.gov.cn/ywdt/yaowen/): 主要涵盖领导活动、重要会议、全市性信息等动态信息。\r\n- [会议信息](https://www.beijing.gov.cn/ywdt/hyxx/): 发布北京市委会议、北京市人大会议、市政府会议、北京市政协会议信息。\r\n- [部门动态](https://www.",
+    "sizeBytes": 10635
+  },
+  "jsonLd": {
+    "status": "pass",
+    "blockCount": 1,
+    "invalidCount": 0,
+    "typeCounts": [
+      {
+        "type": "GovernmentOrganization",
+        "count": 1
+      },
+      {
+        "type": "WebSite",
+        "count": 1
+      }
+    ]
+  },
+  "probe": {
+    "status": "pass",
+    "targetUrl": "https://www.beijing.gov.cn/",
+    "baseline": {
+      "httpStatus": 200,
+      "finalUrl": "https://www.beijing.gov.cn/",
+      "redirected": false,
+      "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+      "verdict": "accessible"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.beijing.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\n<html lang=\"zh-CN\">\n<head>\n<meta name=\"applicable-device\" content=\"pc,mobile\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\"",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      }
+    ]
+  },
+  "csr": {
+    "status": "pass",
+    "serverChars": 6053,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "estimate": {
+      "visibleChars": 6053,
+      "htmlChars": 187150,
+      "signals": [],
+      "level": "low"
+    }
+  }
+}

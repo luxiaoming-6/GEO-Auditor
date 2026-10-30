@@ -1,0 +1,166 @@
+{
+  "url": "https://www.tencent.com/zh-cn/",
+  "origin": "https://www.tencent.com",
+  "auditedAt": 1793332678201,
+  "robots": {
+    "status": "pass",
+    "exists": false,
+    "evaluatedPath": "/zh-cn/",
+    "bots": [],
+    "httpStatus": 404
+  },
+  "llmsTxt": {
+    "status": "warn",
+    "exists": false,
+    "httpStatus": 404,
+    "note": "未部署"
+  },
+  "jsonLd": {
+    "status": "pass",
+    "blockCount": 1,
+    "invalidCount": 0,
+    "typeCounts": [
+      {
+        "type": "BreadcrumbList",
+        "count": 1
+      },
+      {
+        "type": "WebPage",
+        "count": 1
+      },
+      {
+        "type": "WebSite",
+        "count": 1
+      }
+    ]
+  },
+  "probe": {
+    "status": "pass",
+    "targetUrl": "https://www.tencent.com/zh-cn/",
+    "baseline": {
+      "httpStatus": 200,
+      "finalUrl": "https://www.tencent.com/zh-cn/",
+      "redirected": false,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+      "verdict": "accessible"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      }
+    ]
+  },
+  "csr": {
+    "status": "pass",
+    "serverChars": 2773,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "estimate": {
+      "visibleChars": 2773,
+      "htmlChars": 174998,
+      "signals": [],
+      "level": "low"
+    }
+  }
+}

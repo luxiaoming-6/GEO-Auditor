@@ -1,0 +1,254 @@
+{
+  "url": "https://techcrunch.com/",
+  "origin": "https://techcrunch.com",
+  "auditedAt": 1793332361107,
+  "robots": {
+    "status": "warn",
+    "exists": true,
+    "evaluatedPath": "/",
+    "bots": [
+      {
+        "token": "GPTBot",
+        "category": "training",
+        "verdict": "disallow",
+        "rule": {
+          "type": "disallow",
+          "path": "/",
+          "line": 41
+        }
+      },
+      {
+        "token": "OAI-SearchBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "ChatGPT-User",
+        "category": "user",
+        "verdict": "disallow",
+        "rule": {
+          "type": "disallow",
+          "path": "/",
+          "line": 22
+        }
+      },
+      {
+        "token": "ClaudeBot",
+        "category": "training",
+        "verdict": "disallow",
+        "rule": {
+          "type": "disallow",
+          "path": "/",
+          "line": 26
+        }
+      },
+      {
+        "token": "Claude-SearchBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "PerplexityBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "Bytespider",
+        "category": "training",
+        "verdict": "disallow",
+        "rule": {
+          "type": "disallow",
+          "path": "/",
+          "line": 16
+        }
+      },
+      {
+        "token": "CCBot",
+        "category": "training",
+        "verdict": "disallow",
+        "rule": {
+          "type": "disallow",
+          "path": "/",
+          "line": 19
+        }
+      },
+      {
+        "token": "Applebot-Extended",
+        "category": "training",
+        "verdict": "disallow",
+        "rule": {
+          "type": "disallow",
+          "path": "/",
+          "line": 13
+        }
+      },
+      {
+        "token": "Google-Extended",
+        "category": "other",
+        "verdict": "info",
+        "note": "该token由Google前台控制，无独立爬虫，需检查Googlebot是否被允许（当前 robots.txt 对 Googlebot 的判定：允许）"
+      }
+    ],
+    "httpStatus": 200,
+    "sizeBytes": 710
+  },
+  "llmsTxt": {
+    "status": "warn",
+    "exists": false,
+    "httpStatus": 404,
+    "note": "未部署"
+  },
+  "jsonLd": {
+    "status": "pass",
+    "blockCount": 1,
+    "invalidCount": 0,
+    "typeCounts": [
+      {
+        "type": "BreadcrumbList",
+        "count": 1
+      },
+      {
+        "type": "CollectionPage",
+        "count": 1
+      },
+      {
+        "type": "Organization",
+        "count": 1
+      },
+      {
+        "type": "WebSite",
+        "count": 1
+      }
+    ]
+  },
+  "probe": {
+    "status": "warn",
+    "targetUrl": "https://techcrunch.com/",
+    "baseline": {
+      "httpStatus": 200,
+      "finalUrl": "https://techcrunch.com/",
+      "redirected": false,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+      "verdict": "accessible"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 200,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 429,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<html>\r\n<head><title>429 Too Many Requests</title></head>\r\n<body>\r\n<center><h1>429 Too Many Requests</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+        "verdict": "blocked",
+        "note": "HTTP 429",
+        "diff": "状态码 200 → 429"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://techcrunch.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>(function(html){html.className = html.className.replace(/\\bno-js\\b/,'js')})(document.documentElement);</script>\n\t<script>\n",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      }
+    ]
+  },
+  "csr": {
+    "status": "pass",
+    "serverChars": 12480,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "estimate": {
+      "visibleChars": 12480,
+      "htmlChars": 452416,
+      "signals": [],
+      "level": "low"
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "url": "https://yoast.com/",
+  "origin": "https://yoast.com",
+  "auditedAt": 1793341016796,
+  "robots": {
+    "status": "pass",
+    "exists": true,
+    "evaluatedPath": "/",
+    "bots": [
+      {
+        "token": "GPTBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "ChatGPT-User",
+        "category": "user",
+        "verdict": "allow"
+      },
+      {
+        "token": "ClaudeBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "PerplexityBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "Bytespider",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "CCBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Applebot-Extended",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Google-Extended",
+        "category": "other",
+        "verdict": "info",
+        "note": "该token由Google前台控制，无独立爬虫，需检查Googlebot是否被允许（当前 robots.txt 对 Googlebot 的判定：允许）"
+      }
+    ],
+    "httpStatus": 200,
+    "sizeBytes": 927
+  },
+  "llmsTxt": {
+    "status": "pass",
+    "exists": true,
+    "httpStatus": 200,
+    "summary": "# Yoast SEO\n\n\n> Yoast SEO is the leading SEO plugin for WordPress and Shopify. Since 2010, Yoast has helped millions of users—from bloggers to Fortune 500 companies—optimize their websites and content for search engines and users alike.\n\n\nYoast is part of Newfold Digital, a leading web technology company supporting millions of small- and medium-sized businesses worldwide. The [Yoast team](https://yoast.com/about-us/team/) includes SEO specialists, developers, and educators dedicated to making SE",
+    "sizeBytes": 7682
+  },
+  "jsonLd": {
+    "status": "pass",
+    "blockCount": 1,
+    "invalidCount": 0,
+    "typeCounts": [
+      {
+        "type": "Brand",
+        "count": 1
+      },
+      {
+        "type": "BreadcrumbList",
+        "count": 1
+      },
+      {
+        "type": "ImageObject",
+        "count": 1
+      },
+      {
+        "type": "Organization",
+        "count": 1
+      },
+      {
+        "type": "WebPage",
+        "count": 1
+      },
+      {
+        "type": "WebSite",
+        "count": 1
+      }
+    ]
+  },
+  "probe": {
+    "status": "pass",
+    "targetUrl": "https://yoast.com/",
+    "baseline": {
+      "httpStatus": 200,
+      "finalUrl": "https://yoast.com/",
+      "redirected": false,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+      "verdict": "accessible"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://yoast.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"color-scheme\" content=\"only light\">\n\n\t<title>SEO for",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      }
+    ]
+  },
+  "csr": {
+    "status": "pass",
+    "serverChars": 9346,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "estimate": {
+      "visibleChars": 9346,
+      "htmlChars": 224155,
+      "signals": [],
+      "level": "low"
+    }
+  }
+}

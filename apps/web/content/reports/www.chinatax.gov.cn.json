@@ -1,0 +1,154 @@
+{
+  "url": "https://www.chinatax.gov.cn/",
+  "origin": "https://www.chinatax.gov.cn",
+  "auditedAt": 1793341140742,
+  "robots": {
+    "status": "pass",
+    "exists": false,
+    "evaluatedPath": "/",
+    "bots": [],
+    "httpStatus": 404
+  },
+  "llmsTxt": {
+    "status": "warn",
+    "exists": false,
+    "httpStatus": 404,
+    "note": "未部署"
+  },
+  "jsonLd": {
+    "status": "warn",
+    "blockCount": 0,
+    "invalidCount": 0,
+    "typeCounts": []
+  },
+  "probe": {
+    "status": "warn",
+    "targetUrl": "https://www.chinatax.gov.cn/",
+    "baseline": {
+      "httpStatus": 200,
+      "finalUrl": "https://www.chinatax.gov.cn/",
+      "redirected": false,
+      "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+      "verdict": "accessible"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 403,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html><html><head><meta charset=utf-8><title>403 Forbidden</title><style>.ec{font-size:16px}.et{text-align:left;color:#333;font-size:28px;margin-bottom:5px}.ec{color:#333;width:700px;margin:1",
+        "verdict": "blocked",
+        "note": "HTTP 403",
+        "diff": "状态码 200 → 403"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://www.chinatax.gov.cn/",
+        "redirected": false,
+        "bodySnippet": "<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      }
+    ]
+  },
+  "csr": {
+    "status": "pass",
+    "serverChars": 4245,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "estimate": {
+      "visibleChars": 4245,
+      "htmlChars": 126509,
+      "signals": [],
+      "level": "low"
+    }
+  }
+}

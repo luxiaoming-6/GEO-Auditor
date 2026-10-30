@@ -99,6 +99,22 @@ export default function AuditApp({
         setError(data.error);
       } else {
         setReport(data.report);
+        // Dev-only archive: the local dev server (server.mjs) writes the
+        // report into content/reports/ so it ships with the repo. In the
+        // production build NODE_ENV is inlined and this branch is eliminated.
+        if (process.env.NODE_ENV === "development") {
+          try {
+            await fetch("/api/save-report", {
+              method: "POST",
+              headers: { "content-type": "application/json" },
+              body: JSON.stringify(data.report),
+            });
+            setShareTip("报告已归档（开发模式，随仓库发布）");
+            setTimeout(() => setShareTip(""), 2000);
+          } catch {
+            // Archiving is best-effort; never block the audit result.
+          }
+        }
       }
     } catch {
       setError("请求失败，请稍后重试");
@@ -125,10 +141,10 @@ export default function AuditApp({
     if (!report) return;
     const domain = new URL(report.url).hostname;
     const link = reportUrl(domain);
-    const text = `GEO Auditor 检测报告：${report.url} 得分 ${score?.total}/100（等级 ${score?.grade}）`;
+    const text = `BotGaze 检测报告：${report.url} 得分 ${score?.total}/100（等级 ${score?.grade}）`;
     try {
       if (typeof navigator.share === "function") {
-        await navigator.share({ title: "GEO Auditor 检测报告", text, url: link });
+        await navigator.share({ title: "BotGaze 检测报告", text, url: link });
         return;
       }
       await navigator.clipboard.writeText(`${text}\n${link}`);
@@ -144,7 +160,7 @@ export default function AuditApp({
 
   return (
     <main>
-      <h1>GEO Auditor</h1>
+      <h1>BotGaze</h1>
       <p className="subtitle">
         输入网址，检测网站对 AI 搜索引擎的友好度：robots.txt AI 爬虫规则 · llms.txt ·
         JSON-LD 结构化数据 · AI 爬虫 UA 可达性

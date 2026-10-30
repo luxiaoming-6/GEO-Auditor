@@ -1,0 +1,206 @@
+{
+  "url": "https://shouyou.3dmgame.com/",
+  "origin": "https://shouyou.3dmgame.com",
+  "auditedAt": 1793341039547,
+  "robots": {
+    "status": "pass",
+    "exists": true,
+    "evaluatedPath": "/",
+    "bots": [
+      {
+        "token": "GPTBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "ChatGPT-User",
+        "category": "user",
+        "verdict": "allow"
+      },
+      {
+        "token": "ClaudeBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "PerplexityBot",
+        "category": "search",
+        "verdict": "allow"
+      },
+      {
+        "token": "Bytespider",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "CCBot",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Applebot-Extended",
+        "category": "training",
+        "verdict": "allow"
+      },
+      {
+        "token": "Google-Extended",
+        "category": "other",
+        "verdict": "info",
+        "note": "该token由Google前台控制，无独立爬虫，需检查Googlebot是否被允许（当前 robots.txt 对 Googlebot 的判定：允许）"
+      }
+    ],
+    "httpStatus": 200,
+    "sizeBytes": 149
+  },
+  "llmsTxt": {
+    "status": "warn",
+    "exists": false,
+    "httpStatus": 404,
+    "note": "未部署"
+  },
+  "jsonLd": {
+    "status": "warn",
+    "blockCount": 0,
+    "invalidCount": 0,
+    "typeCounts": []
+  },
+  "probe": {
+    "status": "pass",
+    "targetUrl": "https://shouyou.3dmgame.com/",
+    "baseline": {
+      "httpStatus": 200,
+      "finalUrl": "https://shouyou.3dmgame.com/",
+      "redirected": false,
+      "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+      "verdict": "accessible"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://shouyou.3dmgame.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>\n    <meta name=\"renderer\" content=\"webkit\">\n    <title>手机app下载_手游下载_手机软件下载_3DM手机频道_3",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      }
+    ]
+  },
+  "csr": {
+    "status": "pass",
+    "serverChars": 6732,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "estimate": {
+      "visibleChars": 6732,
+      "htmlChars": 116827,
+      "signals": [],
+      "level": "low"
+    }
+  }
+}

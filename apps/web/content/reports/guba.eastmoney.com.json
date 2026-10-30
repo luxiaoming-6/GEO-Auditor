@@ -1,0 +1,155 @@
+{
+  "url": "https://guba.eastmoney.com/",
+  "origin": "https://guba.eastmoney.com",
+  "auditedAt": 1793340939891,
+  "robots": {
+    "status": "pass",
+    "exists": false,
+    "evaluatedPath": "/",
+    "bots": [],
+    "httpStatus": 404
+  },
+  "llmsTxt": {
+    "status": "warn",
+    "exists": false,
+    "httpStatus": 404,
+    "note": "未部署"
+  },
+  "jsonLd": {
+    "status": "warn",
+    "blockCount": 0,
+    "invalidCount": 0,
+    "typeCounts": []
+  },
+  "probe": {
+    "status": "warn",
+    "targetUrl": "https://guba.eastmoney.com/",
+    "baseline": {
+      "httpStatus": 200,
+      "finalUrl": "https://guba.eastmoney.com/",
+      "redirected": false,
+      "bodySnippet": "<!DOCTYPE html><html lang=\"en\"><meta http-equiv=\"refresh\" content=\"1800\"/><head><meta name=\"env\" content=\"zp, render at 2026-10-30 14:15:36\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome",
+      "verdict": "accessible"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><html lang=\"en\"><meta http-equiv=\"refresh\" content=\"1800\"/><head><meta name=\"env\" content=\"zp, render at 2026-10-30 14:15:05\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><html lang=\"en\"><meta http-equiv=\"refresh\" content=\"1800\"/><head><meta name=\"env\" content=\"zp, render at 2026-10-30 14:15:12\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 200,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><html lang=\"en\"><meta http-equiv=\"refresh\" content=\"1800\"/><head><meta name=\"env\" content=\"zp, render at 2026-10-30 14:15:23\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><html lang=\"en\"><meta http-equiv=\"refresh\" content=\"1800\"/><head><meta name=\"env\" content=\"zp, render at 2026-10-30 14:15:20\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><html lang=\"en\"><meta http-equiv=\"refresh\" content=\"1800\"/><head><meta name=\"env\" content=\"zp, render at 2026-10-30 14:14:59\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><html lang=\"en\"><meta http-equiv=\"refresh\" content=\"1800\"/><head><meta name=\"env\" content=\"zp, render at 2026-10-30 14:15:40\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><html lang=\"en\"><meta http-equiv=\"refresh\" content=\"1800\"/><head><meta name=\"env\" content=\"zp, render at 2026-10-30 14:15:39\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 403,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>Microsoft-IIS/10.0</center>\r\n</body>\r\n</html>\r\n",
+        "verdict": "blocked",
+        "note": "HTTP 403",
+        "diff": "状态码 200 → 403"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 403,
+        "finalUrl": "https://guba.eastmoney.com/",
+        "redirected": false,
+        "bodySnippet": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>Microsoft-IIS/10.0</center>\r\n</body>\r\n</html>\r\n",
+        "verdict": "blocked",
+        "note": "HTTP 403",
+        "diff": "状态码 200 → 403"
+      }
+    ]
+  },
+  "csr": {
+    "status": "warn",
+    "serverChars": 495,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "estimate": {
+      "visibleChars": 495,
+      "htmlChars": 16068,
+      "signals": [],
+      "level": "medium"
+    }
+  }
+}
