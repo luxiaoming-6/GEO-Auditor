@@ -22,7 +22,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppJsonLd) }}
       />
-      <AuditApp />
+      <AuditApp showPremium />
     </>
   );
 }
