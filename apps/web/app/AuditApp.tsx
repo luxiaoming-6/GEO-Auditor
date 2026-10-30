@@ -10,6 +10,7 @@ import {
 } from "@geo-auditor/audit-core";
 import { reportUrl } from "../lib/siteUrl";
 import { trackEvent } from "../lib/analytics";
+import PremiumTeaser from "../components/PremiumTeaser";
 
 const STATUS_TEXT: Record<CheckStatus, string> = {
   pass: "通过",
@@ -67,9 +68,11 @@ function Card({
 export default function AuditApp({
   initialDomain,
   autoStart = false,
+  showPremium = false,
 }: {
   initialDomain?: string;
   autoStart?: boolean;
+  showPremium?: boolean;
 }) {
   const [input, setInput] = useState(initialDomain ? `https://${initialDomain}` : "");
   const [loading, setLoading] = useState(false);
@@ -324,6 +327,10 @@ export default function AuditApp({
               </>
             )}
           </Card>
+
+          {showPremium && (
+            <PremiumTeaser domain={new URL(report.url).hostname} />
+          )}
 
           <footer>
             检测时间 {new Date(report.auditedAt).toLocaleString("zh-CN")} · Web 版满分{" "}

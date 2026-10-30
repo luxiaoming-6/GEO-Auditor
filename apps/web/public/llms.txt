@@ -1,0 +1,8 @@
+# GEO Auditor
+
+> 免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的引用与可见性，生成 GEO 优化建议报告。
+
+## Tools
+
+- [首页](https://geo-auditor.pages.dev/)：免费 GEO 检测工具入口，输入网址即可检测 AI 引用友好度
+- [报告示例](https://geo-auditor.pages.dev/report/example.com)：GEO 检测报告结构说明，展示评分与五项检测详情

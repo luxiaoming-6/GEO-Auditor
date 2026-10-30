@@ -21,23 +21,29 @@ const ANALYTICS_ENABLED = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "1";
 // configured site origin (NEXT_PUBLIC_SITE_URL) — no hardcoded domains.
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "GEO Auditor — AI 搜索友好度检测",
+  title: {
+    default: "GEO Auditor - 免费 AI 引用检测工具",
+    template: "%s | GEO Auditor",
+  },
   description:
-    "输入网址，检测网站对 AI 搜索引擎（GEO）的友好度：robots.txt AI 爬虫规则、llms.txt、JSON-LD 结构化数据、AI 爬虫 UA 可达性。",
+    "免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的可见性与引用情况，生成 GEO 优化建议报告。",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
+    locale: "zh_CN",
     siteName: "GEO Auditor",
     url: "/",
-    title: "GEO Auditor — AI 搜索友好度检测",
+    title: "GEO Auditor - 免费 AI 引用检测工具",
     description:
-      "输入网址，检测网站对 AI 搜索引擎（GEO）的友好度：robots.txt AI 爬虫规则、llms.txt、JSON-LD 结构化数据、AI 爬虫 UA 可达性。",
+      "免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的可见性与引用情况，生成 GEO 优化建议报告。",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
-    card: "summary",
-    title: "GEO Auditor — AI 搜索友好度检测",
+    card: "summary_large_image",
+    title: "GEO Auditor - 免费 AI 引用检测工具",
     description:
-      "输入网址，检测网站对 AI 搜索引擎（GEO）的友好度：robots.txt AI 爬虫规则、llms.txt、JSON-LD 结构化数据、AI 爬虫 UA 可达性。",
+      "免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的可见性与引用情况，生成 GEO 优化建议报告。",
+    images: ["/og-image.jpg"],
   },
 };
 
