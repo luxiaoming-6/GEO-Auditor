@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react";
 import {
   buildScore,
   type AuditReport,
@@ -69,10 +70,15 @@ export default function AuditApp({
   initialDomain,
   autoStart = false,
   showPremium = false,
+  bottomSlot,
 }: {
   initialDomain?: string;
   autoStart?: boolean;
   showPremium?: boolean;
+  // Server-rendered node rendered at the bottom of <main> (the home page
+  // passes its static explanatory content here — AuditApp itself is
+  // client-rendered, and AI crawlers only read server HTML).
+  bottomSlot?: ReactNode;
 }) {
   const [input, setInput] = useState(initialDomain ? `https://${initialDomain}` : "");
   const [loading, setLoading] = useState(false);
@@ -348,12 +354,15 @@ export default function AuditApp({
             <PremiumTeaser domain={new URL(report.url).hostname} />
           )}
 
-          <footer>
-            检测时间 {new Date(report.auditedAt).toLocaleString("zh-CN")} · Web 版满分{" "}
-            {score.max}
-            {report.csr.skipped ? "（页面读取失败，内容流失未计分）" : ""}
-          </footer>
         </>
+      )}
+      {bottomSlot}
+      {report && score && (
+        <footer>
+          检测时间 {new Date(report.auditedAt).toLocaleString("zh-CN")} · Web 版满分{" "}
+          {score.max}
+          {report.csr.skipped ? "（页面读取失败，内容流失未计分）" : ""}
+        </footer>
       )}
     </main>
   );

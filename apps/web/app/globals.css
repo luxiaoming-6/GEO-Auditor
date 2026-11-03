@@ -413,3 +413,43 @@ footer {
 .article footer a:hover {
   text-decoration: underline;
 }
+
+/* Server-rendered content sections on the home page (passed into AuditApp
+   as bottomSlot). AI crawlers don't execute JS — this static HTML is the
+   body text they read. */
+
+.static-content {
+  margin-top: 36px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+}
+
+.static-content h2 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.static-content p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.static-content ol {
+  padding-left: 22px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.static-content li {
+  margin-bottom: 8px;
+}
+
+.faq-item h3 {
+  font-size: 15px;
+  margin: 18px 0 4px;
+}
+
+.faq-item p {
+  color: var(--muted);
+  margin: 0;
+}
