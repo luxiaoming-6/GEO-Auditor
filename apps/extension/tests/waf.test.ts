@@ -42,6 +42,17 @@ describe("classifyProbe", () => {
     expect(result.note).toContain("404");
   });
 
+  it("never treats 5xx (incl. Cloudflare 530 origin errors) as accessible", () => {
+    for (const status of [500, 502, 504, 520, 521, 522, 527, 530]) {
+      expect(classifyProbe(status, "x".repeat(300))).toMatchObject({
+        verdict: "error",
+        note: `HTTP ${status}（服务器错误）`,
+      });
+    }
+    // 503 keeps its WAF "blocked" meaning (Cloudflare challenge mode).
+    expect(classifyProbe(503, "x".repeat(300)).verdict).toBe("blocked");
+  });
+
   it("does not flag full page HTML merely containing 'challenge' (yoast false positive)", () => {
     const body = `<html><head><title>Yoast - SEO for everyone</title></head><body>${"challenge ".repeat(2000)}</body></html>`;
     expect(classifyProbe(200, body)).toMatchObject({ verdict: "accessible" });

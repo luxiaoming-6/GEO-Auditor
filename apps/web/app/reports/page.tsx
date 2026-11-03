@@ -35,12 +35,14 @@ export default async function ReportsPage() {
         <ul className="report-list">
           {reports.map(({ domain, score, report }) => (
             <li key={domain} className="report-item">
+              {/* Explicit spaces keep the plain-text serialization readable
+                  for crawlers/snapshots (flex gap only helps with CSS on). */}
               <span className={`grade-badge ${score.grade.toLowerCase()}`}>
                 {score.grade}
-              </span>
+              </span>{" "}
               <Link href={`/reports/${domain}`} className="report-link">
                 {domain} 的 GEO 检测报告
-              </Link>
+              </Link>{" "}
               <span className="muted">
                 {score.total}/{score.max} 分 · {formatCnDateTime(report.auditedAt)}
               </span>

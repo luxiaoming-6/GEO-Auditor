@@ -142,6 +142,9 @@ export function buildScore(report: AuditReport): ScoreResult {
       suggestions.push(
         "疑似 CSR 空壳（估算）：AI 爬虫几乎读不到正文，建议将核心内容改为服务端渲染（SSR/SSG）",
       );
+      suggestions.push(
+        "空壳案例：Next.js 整页 \"use client\" 空挂载（数据在 useEffect 里取）→ 改为 Server Components 服务端取数；React/Vue SPA → 开启 prerender 或迁到支持 SSG 的框架；WordPress → 避免全站 JS 渲染主题",
+      );
     }
   } else if (report.csr.error) {
     csr = 0;

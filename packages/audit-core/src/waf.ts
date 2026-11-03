@@ -36,6 +36,12 @@ export function classifyProbe(httpStatus: number, body: string): ProbeClassifica
   if (httpStatus === 403 || httpStatus === 429 || httpStatus === 503) {
     return { verdict: "blocked", note: `HTTP ${httpStatus}` };
   }
+  if (httpStatus >= 500) {
+    // 5xx = the server itself failed (500/502/504 and Cloudflare's
+    // origin-unreachable family 520-527/530). No WAF semantics here: the AI
+    // crawler simply gets no content, so it must never count as "accessible".
+    return { verdict: "error", note: `HTTP ${httpStatus}（服务器错误）` };
+  }
   if (httpStatus >= 200 && httpStatus < 300) {
     const trimmed = body.trim();
     if (trimmed.length < CHALLENGE_MIN_BODY_CHARS) {
@@ -55,8 +61,8 @@ export function classifyProbe(httpStatus: number, body: string): ProbeClassifica
     }
     return { verdict: "accessible" };
   }
-  // Other statuses (404, 500...) are not WAF blocking per se; surface them
-  // via the status column, verdict stays "accessible".
+  // Other statuses (404, 3xx gone...) are not WAF blocking per se; surface
+  // them via the status column, verdict stays "accessible".
   if (httpStatus !== 200) {
     return { verdict: "accessible", note: `非常规状态码 HTTP ${httpStatus}` };
   }
