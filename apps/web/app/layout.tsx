@@ -18,6 +18,14 @@ const BAIDU_SNIPPET = `var _hmt = _hmt || [];
 })();`;
 const ANALYTICS_ENABLED = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "1";
 
+// Search-engine ownership verification codes. Filled via environment
+// variables after registering the site on each webmaster platform (see
+// .env.local); unset vars simply omit the corresponding meta tag.
+const GOOGLE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const BING_VERIFICATION = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
+const BAIDU_VERIFICATION = process.env.NEXT_PUBLIC_BAIDU_SITE_VERIFICATION;
+const SO360_VERIFICATION = process.env.NEXT_PUBLIC_SO360_SITE_VERIFICATION;
+
 // metadataBase makes every relative canonical/OG url resolve against the
 // configured site origin (NEXT_PUBLIC_SITE_URL) — no hardcoded domains.
 export const metadata: Metadata = {
@@ -29,6 +37,15 @@ export const metadata: Metadata = {
   description:
     "免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的可见性与引用情况，生成 GEO 优化建议报告。",
   alternates: { canonical: "/" },
+  verification: {
+    google: GOOGLE_VERIFICATION || undefined,
+    other: {
+      // Bing uses the classic msvalidate.01 meta name.
+      ...(BING_VERIFICATION ? { "msvalidate.01": [BING_VERIFICATION] } : {}),
+      ...(BAIDU_VERIFICATION ? { "baidu-site-verification": [BAIDU_VERIFICATION] } : {}),
+      ...(SO360_VERIFICATION ? { "360-site-verification": [SO360_VERIFICATION] } : {}),
+    },
+  },
   openGraph: {
     type: "website",
     locale: "zh_CN",

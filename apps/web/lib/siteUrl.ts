@@ -6,7 +6,7 @@
 // URL anywhere else in the app.
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://geo-auditor.pages.dev"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://geo.botgaze.top"
 ).replace(/\/+$/, "");
 
 // Shareable report link: {SITE_URL}/report/{domain}. The report page runs a
