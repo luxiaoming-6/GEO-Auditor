@@ -1,0 +1,262 @@
+{
+  "url": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+  "origin": "https://geo-auditor-9jx.pages.dev",
+  "auditedAt": 1793358716092,
+  "robots": {
+    "status": "pass",
+    "exists": true,
+    "evaluatedPath": "/reports/shouyou.3dmgame.com",
+    "bots": [
+      {
+        "token": "GPTBot",
+        "category": "training",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 13
+        }
+      },
+      {
+        "token": "OAI-SearchBot",
+        "category": "search",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 13
+        }
+      },
+      {
+        "token": "ChatGPT-User",
+        "category": "user",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 13
+        }
+      },
+      {
+        "token": "ClaudeBot",
+        "category": "training",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 13
+        }
+      },
+      {
+        "token": "Claude-SearchBot",
+        "category": "search",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 16
+        }
+      },
+      {
+        "token": "PerplexityBot",
+        "category": "search",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 13
+        }
+      },
+      {
+        "token": "Bytespider",
+        "category": "training",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 13
+        }
+      },
+      {
+        "token": "CCBot",
+        "category": "training",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 16
+        }
+      },
+      {
+        "token": "Applebot-Extended",
+        "category": "training",
+        "verdict": "allow",
+        "rule": {
+          "type": "allow",
+          "path": "/",
+          "line": 13
+        }
+      },
+      {
+        "token": "Google-Extended",
+        "category": "other",
+        "verdict": "info",
+        "note": "该token由Google前台控制，无独立爬虫，需检查Googlebot是否被允许（当前 robots.txt 对 Googlebot 的判定：允许）"
+      }
+    ],
+    "httpStatus": 200,
+    "sizeBytes": 385
+  },
+  "llmsTxt": {
+    "status": "pass",
+    "exists": true,
+    "httpStatus": 200,
+    "summary": "# BotGaze\n\n> 免费检测网站在 ChatGPT、Perplexity 等 AI 搜索引擎中的引用与可见性，生成 GEO 优化建议报告。\n\n## Tools\n\n- [首页](https://geo-auditor.pages.dev/)：免费 GEO 检测工具入口，输入网址即可检测 AI 引用友好度\n- [报告示例](https://geo-auditor.pages.dev/report/example.com)：GEO 检测报告结构说明，展示评分与五项检测详情\n- [检测报告列表](https://geo-auditor.pages.dev/reports)：已归档的网站 GEO 检测报告，每篇含评分、五项检测详情与改进建议\n",
+    "sizeBytes": 555
+  },
+  "jsonLd": {
+    "status": "pass",
+    "blockCount": 1,
+    "invalidCount": 0,
+    "typeCounts": [
+      {
+        "type": "Article",
+        "count": 1
+      }
+    ]
+  },
+  "probe": {
+    "status": "warn",
+    "targetUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+    "baseline": {
+      "httpStatus": 200,
+      "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+      "redirected": false,
+      "bodySnippet": "<!DOCTYPE html><!--osC9MYgt8TB_KZcXJWvpq--><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/stat",
+      "verdict": "accessible"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 0,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 200,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><!--osC9MYgt8TB_KZcXJWvpq--><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/stat",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 200,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><!--osC9MYgt8TB_KZcXJWvpq--><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/stat",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><!--osC9MYgt8TB_KZcXJWvpq--><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/stat",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 0,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 0,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><!--osC9MYgt8TB_KZcXJWvpq--><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/stat",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><!--osC9MYgt8TB_KZcXJWvpq--><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/stat",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 200,
+        "finalUrl": "https://geo-auditor-9jx.pages.dev/reports/shouyou.3dmgame.com",
+        "redirected": false,
+        "bodySnippet": "<!DOCTYPE html><!--osC9MYgt8TB_KZcXJWvpq--><html lang=\"zh-CN\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/stat",
+        "verdict": "accessible",
+        "diff": "与基线一致"
+      }
+    ]
+  },
+  "csr": {
+    "status": "pass",
+    "serverChars": 1430,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "estimate": {
+      "visibleChars": 1430,
+      "htmlChars": 26044,
+      "signals": [
+        "脚本内容占 HTML 75%"
+      ],
+      "level": "low"
+    }
+  }
+}
