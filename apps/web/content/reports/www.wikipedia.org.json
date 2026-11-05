@@ -1,0 +1,159 @@
+{
+  "url": "https://www.wikipedia.org/",
+  "origin": "https://www.wikipedia.org",
+  "auditedAt": 1793848340469,
+  "robots": {
+    "status": "fail",
+    "exists": false,
+    "evaluatedPath": "/",
+    "bots": [],
+    "fetchError": "请求超时"
+  },
+  "llmsTxt": {
+    "status": "fail",
+    "exists": false,
+    "fetchError": "请求超时"
+  },
+  "jsonLd": {
+    "status": "fail",
+    "blockCount": 0,
+    "invalidCount": 0,
+    "typeCounts": [],
+    "error": "页面读取失败（请求超时）"
+  },
+  "probe": {
+    "status": "warn",
+    "targetUrl": "https://www.wikipedia.org/",
+    "baseline": {
+      "httpStatus": 0,
+      "finalUrl": "https://www.wikipedia.org/",
+      "redirected": false,
+      "bodySnippet": "",
+      "verdict": "error",
+      "fetchError": "请求超时"
+    },
+    "results": [
+      {
+        "token": "GPTBot",
+        "vendor": "OpenAI",
+        "category": "training",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "OAI-SearchBot",
+        "vendor": "OpenAI",
+        "category": "search",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "ChatGPT-User",
+        "vendor": "OpenAI",
+        "category": "user",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "ClaudeBot",
+        "vendor": "Anthropic",
+        "category": "training",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "Claude-SearchBot",
+        "vendor": "Anthropic",
+        "category": "search",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "PerplexityBot",
+        "vendor": "Perplexity",
+        "category": "search",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "Bytespider",
+        "vendor": "ByteDance",
+        "category": "training",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "CCBot",
+        "vendor": "Common Crawl",
+        "category": "training",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      },
+      {
+        "token": "Applebot-Extended",
+        "vendor": "Apple",
+        "category": "training",
+        "httpStatus": 0,
+        "finalUrl": "https://www.wikipedia.org/",
+        "redirected": false,
+        "bodySnippet": "",
+        "verdict": "error",
+        "fetchError": "请求超时",
+        "diff": "请求失败"
+      }
+    ]
+  },
+  "csr": {
+    "status": "warn",
+    "serverChars": 0,
+    "renderedChars": 0,
+    "serverLines": 0,
+    "renderedLines": 0,
+    "overlapLines": 0,
+    "overlapRate": 0,
+    "heavyCsr": false,
+    "injectedSamples": [],
+    "skipped": true,
+    "error": "页面读取失败，内容流失无法估算：建议使用浏览器扩展检测"
+  }
+}

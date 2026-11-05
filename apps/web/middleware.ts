@@ -11,10 +11,16 @@ import { SITE_URL } from "./lib/siteUrl";
 const CANONICAL_HOST = new URL(SITE_URL).hostname;
 
 export function middleware(req: NextRequest) {
-  const host = (req.headers.get("host") ?? "")
-    .split(":")[0]
-    .toLowerCase();
-  if (host === CANONICAL_HOST || host === "localhost" || host === "127.0.0.1") {
+  const host = (req.headers.get("host") ?? "").toLowerCase();
+  // Strip the port. IPv6 literals arrive bracketed ("[::1]:3100") — extract
+  // the address inside the brackets instead of cutting at the first colon.
+  const hostname = host.startsWith("[")
+    ? host.slice(1, host.indexOf("]"))
+    : host.split(":")[0];
+  // Exempt local dev hosts (browsers may reach localhost via IPv6 ::1).
+  const isLocal =
+    hostname === "localhost" || hostname === "127.0.0.1" || hostname === "::1";
+  if (hostname === CANONICAL_HOST || isLocal) {
     return NextResponse.next();
   }
   const url = new URL(req.url);

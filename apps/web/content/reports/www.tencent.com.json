@@ -1,11 +1,11 @@
 {
-  "url": "https://www.tencent.com/zh-cn/",
+  "url": "https://www.tencent.com/",
   "origin": "https://www.tencent.com",
-  "auditedAt": 1793332678201,
+  "auditedAt": 1793847587027,
   "robots": {
     "status": "pass",
     "exists": false,
-    "evaluatedPath": "/zh-cn/",
+    "evaluatedPath": "/",
     "bots": [],
     "httpStatus": 404
   },
@@ -36,12 +36,12 @@
   },
   "probe": {
     "status": "pass",
-    "targetUrl": "https://www.tencent.com/zh-cn/",
+    "targetUrl": "https://www.tencent.com/",
     "baseline": {
       "httpStatus": 200,
-      "finalUrl": "https://www.tencent.com/zh-cn/",
+      "finalUrl": "https://www.tencent.com/",
       "redirected": false,
-      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
       "verdict": "accessible"
     },
     "results": [
@@ -50,9 +50,9 @@
         "vendor": "OpenAI",
         "category": "training",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       },
@@ -61,9 +61,9 @@
         "vendor": "OpenAI",
         "category": "search",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       },
@@ -72,9 +72,9 @@
         "vendor": "OpenAI",
         "category": "user",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       },
@@ -83,9 +83,9 @@
         "vendor": "Anthropic",
         "category": "training",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       },
@@ -94,9 +94,9 @@
         "vendor": "Anthropic",
         "category": "search",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       },
@@ -105,9 +105,9 @@
         "vendor": "Perplexity",
         "category": "search",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       },
@@ -116,9 +116,9 @@
         "vendor": "ByteDance",
         "category": "training",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       },
@@ -127,9 +127,9 @@
         "vendor": "Common Crawl",
         "category": "training",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       },
@@ -138,9 +138,9 @@
         "vendor": "Apple",
         "category": "training",
         "httpStatus": 200,
-        "finalUrl": "https://www.tencent.com/zh-cn/",
+        "finalUrl": "https://www.tencent.com/",
         "redirected": false,
-        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
+        "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <script>\n        // Disable console",
         "verdict": "accessible",
         "diff": "与基线一致"
       }
@@ -148,7 +148,7 @@
   },
   "csr": {
     "status": "pass",
-    "serverChars": 2773,
+    "serverChars": 6485,
     "renderedChars": 0,
     "serverLines": 0,
     "renderedLines": 0,
@@ -157,8 +157,8 @@
     "heavyCsr": false,
     "injectedSamples": [],
     "estimate": {
-      "visibleChars": 2773,
-      "htmlChars": 174998,
+      "visibleChars": 6485,
+      "htmlChars": 179354,
       "signals": [],
       "level": "low"
     }
